@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height:100vh;
+}
+
+
+.box {
+  position: absolute;
+  top: 20px;
+  left:50%;
+  transform:translate(-50%, 0);
+  width: 1000px;
+  border-radius: 20px;
+  padding: 80px 60px;
+  background: rgba(0,0,0,0.6);
+}
+
+header > img {
+  margin:auto;
+  width: 23%;
+  display: block;
+}
+
+.title {
+  color: lime;
+  text-align: center;
+  margin: 20px 0 5px;
+}
+
+.reservation-bar {
+  position: relative;
+  background-color: lime;
+  height: 40px;
+}
+.reservation-buttons {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.reservation-buttons input {
+  padding: 3px;
+  font-weight: bold;
+}
+
+.info-monopattini {
+  width: 60%;
+  padding: 5px;
+  color: #f9feee;
+}
+.loading-status {
+  margin-top: 25px;
+  color: white;
+}
+.loading-status p::before {
+  content: "\21A6";
+}
+.loading-status  p {
+  margin-top: 5px;
+}
+.driver-location br {
+  margin: 5px;
+}
+.driver-name {
+  display: inline;
+
+}
+.loading-bar {
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.loading-status .orange {
+  width:70%;
+  background-color: #f5b453;
+}
+
+.loading-status .green {
+  width:100%;
+  background-color: #1ec31e;
+}
+
+.loading-status .red {
+  width:25%;
+  background-color: #be4141;
+}
